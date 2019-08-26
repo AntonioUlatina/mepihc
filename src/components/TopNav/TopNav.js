@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import "./TopNav.css";
+import { Link } from "react-router-dom";
 
 function TopNav() {
   return (
@@ -14,9 +15,9 @@ function TopNav() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/games">Juegos</Nav.Link>
-          <Nav.Link href="/topics">Topics</Nav.Link>
+          <Link className="nav-link" to="/">Home</Link>
+          <Link className="nav-link" to="/games">Juegos</Link>
+          <Link className="nav-link" to="/topics">Topics</Link>
           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
