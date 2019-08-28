@@ -21,7 +21,7 @@ export default class Navbar extends Component {
               <div className="nav-center">
                 <ul className={"nav-links show-nav"}>
                   <li>
-                    <Link to="/">Home </Link>
+                    <Link to="/">Inicio</Link>
                   </li>
                   <li>
                     <Link to="/games">Juegos</Link>
